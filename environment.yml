@@ -1,0 +1,22 @@
+name: time-series-methods
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - pandas
+  - numpy
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - statsmodels
+  - scipy
+  - jupyter
+  - ipykernel
+  - pip
+  - pip:
+    - catboost
+    - tabpfn
+    - tabpfn-time-series
+    - holidays
+    - ruptures

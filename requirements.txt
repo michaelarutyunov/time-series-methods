@@ -8,3 +8,7 @@ tabpfn
 tabpfn-time-series
 statsmodels
 holidays
+ruptures
+scipy
+jupyter
+ipykernel
