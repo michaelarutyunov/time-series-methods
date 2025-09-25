@@ -20,10 +20,10 @@ classifiers = [
     "Programming Language :: Python :: 3.12",
 ]
 dependencies = [
-    "pandas",
+    "pandas>=2.2.0",
     "numpy",
     "matplotlib",
-    "seaborn", 
+    "seaborn",
     "scikit-learn",
     "catboost",
     "tabpfn",
@@ -34,6 +34,8 @@ dependencies = [
     "scipy",
     "jupyter",
     "ipykernel",
+    "pycatch22>=0.4.5",
+    "tsfeatures>=0.4.5",
 ]
 
 [project.optional-dependencies]
