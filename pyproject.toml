@@ -36,6 +36,10 @@ dependencies = [
     "ipykernel",
     "pycatch22>=0.4.5",
     "tsfeatures>=0.4.5",
+    "tsfresh>=0.21.1",
+    "sktime>=0.39.0",
+    "shapiq",
+    "shap>=0.48.0",
 ]
 
 [project.optional-dependencies]
