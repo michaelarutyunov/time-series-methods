@@ -19,7 +19,8 @@
       "WebFetch(domain:raw.githubusercontent.com)",
       "WebFetch(domain:github.com)",
       "WebFetch(domain:shapiq.readthedocs.io)",
-      "Bash(uv pip:*)"
+      "Bash(uv pip:*)",
+      "Bash(cat:*)"
     ],
     "deny": []
   }
