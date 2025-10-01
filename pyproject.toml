@@ -1,46 +1,49 @@
 [build-system]
-requires = ["setuptools>=45", "wheel"]
+requires = ["setuptools>=77.0.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "time-series-methods"
 version = "0.1.0"
-description = "UK FMCG demand forecasting using TabPFN, CatBoost, and SARIMAX with conformal prediction"
+description = "UK e-commerce growth dynamics analysis using TabPFN time-series forecasting"
 authors = [{name = "Your Name", email = "your.email@example.com"}]
-license = {text = "MIT"}
+license = "MIT"
 readme = "README.md"
 requires-python = ">=3.10"
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Science/Research",
-    "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
 ]
 dependencies = [
+    # Core data manipulation
     "pandas>=2.2.0",
     "numpy",
+    # Visualization
     "matplotlib",
     "seaborn",
+    # ML models
     "scikit-learn",
-    "catboost",
-    "tabpfn",
+    "tabpfn-client",
     "tabpfn-time-series",
+    "autogluon.timeseries",
+    # Time series analysis
     "statsmodels",
-    "holidays",
+    "sktime>=0.39.0",
     "ruptures",
+    # Utilities
     "scipy",
+    "python-dotenv",
+    # Notebook environment
     "jupyter",
     "ipykernel",
-    "pycatch22>=0.4.5",
-    "tsfeatures>=0.4.5",
-    "tsfresh>=0.21.1",
-    "sktime>=0.39.0",
-    "shapiq",
-    "shap>=0.48.0",
 ]
+
+[tool.setuptools]
+packages = []  # This is a notebook-only project, no Python packages to install
 
 [project.optional-dependencies]
 dev = [
