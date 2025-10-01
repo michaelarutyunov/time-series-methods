@@ -20,8 +20,8 @@ classifiers = [
 ]
 dependencies = [
     # Core data manipulation
-    "pandas>=2.2.0",
-    "numpy",
+    "pandas>=2.1.2,<2.2.0",  # Pinned for tabpfn-time-series compatibility
+    "numpy>=1.26.0,<2.0.0",  # NumPy 1.x required by pandas 2.1.x
     # Visualization
     "matplotlib",
     "seaborn",
