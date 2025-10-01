@@ -205,6 +205,20 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
-CLAUDE.md
+
+# Claude Code & IDE settings
 .claude/settings.local.json
 .vscode/settings.json
+
+# Project-specific
+# Processed/generated data files
+data/processed/*.csv
+data/processed/*.pkl
+data/processed/*.parquet
+data/processed/*.pq
+
+# Notebook outputs (optional - uncomment to ignore all outputs)
+# notebooks/**/*.ipynb
+
+# Artifacts from command errors
+=*

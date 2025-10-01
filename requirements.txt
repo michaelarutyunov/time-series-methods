@@ -1,14 +1,26 @@
+# Core data manipulation and scientific computing
 pandas
 numpy
+
+# Visualization
 matplotlib
 seaborn
+
+# Machine learning and modeling
 scikit-learn
-catboost
-tabpfn
+tabpfn-client
 tabpfn-time-series
+autogluon.timeseries
+
+# Time series analysis
 statsmodels
-holidays
+sktime
 ruptures
+
+# Utilities
 scipy
+python-dotenv
+
+# Notebook environment
 jupyter
 ipykernel

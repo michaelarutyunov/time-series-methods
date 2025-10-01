@@ -4,19 +4,28 @@ channels:
   - defaults
 dependencies:
   - python=3.12
+  # Core data manipulation and scientific computing
   - pandas
   - numpy
+  # Visualization
   - matplotlib
   - seaborn
+  # Machine learning
   - scikit-learn
+  # Time series analysis
   - statsmodels
   - scipy
+  # Notebook environment
   - jupyter
   - ipykernel
   - pip
   - pip:
-    - catboost
-    - tabpfn
+    # ML models
+    - tabpfn-client
     - tabpfn-time-series
-    - holidays
+    - autogluon.timeseries
+    # Time series tools
+    - sktime
     - ruptures
+    # Utilities
+    - python-dotenv
