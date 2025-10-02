@@ -117,12 +117,14 @@ data/
    - **Data Leakage Prevention**: Progressive masking to ensure regime dummies don't leak future information
    - Evaluate forecast accuracy using holdout period
    - Compare which scenario best matches recent trends per category
-8. **`07_aggregate_forecast.ipynb`**: Aggregation and 2026 forecast (PLANNED)
-   - Weight category forecasts by retail sales volume
-   - Generate bottom-up 2026 aggregate forecast (3 scenarios)
-   - Compare to top-down approach on aggregate data
-   - Sensitivity analysis: which categories drive uncertainty?
-   - Final deliverable: 2026 forecast with confidence intervals per scenario
+8. **`07_aggregate_forecast.ipynb`**: Aggregation and 2026 forecast (COMPLETE)
+   - **Volume-weighted aggregation**: Uses actual internet sales values (£m/week) from ONS IntValSA sheet
+   - Weights calculated as each category's proportion of total internet sales (2015-2025 average)
+   - Dominant weights: Non-store retail (49.4%), Food stores (14.2%), Clothing (12.1%)
+   - Generate bottom-up 2026 aggregate forecast using best scenario per category
+   - Compare to top-down approach on aggregate data (Scenario C)
+   - Sensitivity analysis: all-Scenario-A vs all-B vs all-C comparisons
+   - Final deliverable: 2026 forecast with confidence intervals and scenario uncertainty
 
 ### Key Variables
 

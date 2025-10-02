@@ -28,7 +28,7 @@ dependencies = [
     # ML models
     "scikit-learn",
     "tabpfn-client",
-    "tabpfn-time-series",
+    "tabpfn-time-series==1.0.4",  # Pinned to 1.0.4 for API compatibility
     "autogluon.timeseries",
     # Time series analysis
     "statsmodels",
@@ -37,6 +37,7 @@ dependencies = [
     # Utilities
     "scipy",
     "python-dotenv",
+    "openpyxl",  # For reading Excel files
     # Notebook environment
     "jupyter",
     "ipykernel",
